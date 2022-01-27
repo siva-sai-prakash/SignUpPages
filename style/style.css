@@ -1,0 +1,56 @@
+/* Root */
+* {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+/* Body */
+body {
+  /* Using grid to align content */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+/* Changing input margin and width */
+input {
+  margin: 0.7rem 0;
+  width: 300px;
+  border: 1px solid black;
+}
+input:focus {
+  outline: 1px solid black;
+}
+
+/* Aligning the logo to the bottom */
+#logo {
+  margin: auto;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: #111;
+  cursor: pointer;
+}
+
+/* Changing Selected font color and background */
+::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+/* Making required labels */
+label::after {
+  content: "*";
+}
