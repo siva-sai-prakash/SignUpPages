@@ -1,0 +1,88 @@
+:root {
+  /* --border: 1px solid black; */
+  --border: none;
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+* {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  align-content: center;
+  border: var(--border);
+}
+
+.icon {
+  border: var(--border);
+}
+nav {
+  border: var(--border);
+  display: flex;
+  align-content: center;
+}
+nav ul {
+  list-style-type: none;
+  border: var(--border);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+}
+/* nav ul li{
+} */
+
+nav ul li a,
+.link {
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  color: var(--primary-color);
+}
+
+nav ul li a:hover,
+.link:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: all 0.2s ease;
+}
+.title {
+  font-size: 4rem;
+  cursor: default;
+}
+.showcase {
+  /* width: auto; */
+  height: 100vh;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.container {
+  background: url("https://cdn.pixabay.com/photo/2020/04/25/07/41/old-5089752_1280.jpg")
+    center center/cover no-repeat;
+}
+.showcase a {
+  font-size: 2rem;
+  margin: 2rem 0;
+  padding: 0.4rem 1rem;
+  text-align: center;
+  color: var(--secondary-color);
+}
+.link:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: all 0.5s ease;
+}
+
+.current {
+  border: 2px solid black;
+  border-radius: 3px;
+}
